@@ -13,14 +13,14 @@ primorial-dilation-operator/
 ├── LICENSE
 ├── README.md
 ├── pyproject.toml
-├── requirements.txt
-├── scripts/
+├── Requirements.txt
+├── Sripts/
 │   └── reproduce_table1.py       # Reproduces Table 1 (k = 1..5) and asserts exact invariants
 ├── src/
 │   └── primorial_dilation/
 │       ├── __init__.py
 │       └── operator.py           # Core operator T_k^Herm, C_p, G_2(N_k), D_k, and CRT embeddings
-└── tests/
+└── Tests/
     └── test_manuscript.py        # Verification suite (unittest & pytest compatible) for Sections II–VII
 ```
 
@@ -49,13 +49,13 @@ pip install -e .
 Run the full manuscript validation suite (standard library `unittest`, or `pytest` if installed):
 
 ```bash
-python -m unittest discover -s tests -v
+python -m unittest discover -s Tests -v
 ```
 
 Reproduce Table 1 ($k = 1 \dots 5$):
 
 ```bash
-python scripts/reproduce_table1.py
+python Sripts/reproduce_table1.py
 ```
 
 ## Licensing
