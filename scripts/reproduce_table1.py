@@ -1,3 +1,8 @@
+# SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+# Required Notice: Copyright (c) 2026 Benjamin Edward Gray (https://doi.org/10.5281/zenodo.22899830)
+# Required Notice: Licensed under the PolyForm Noncommercial License 1.0.0 (see LICENSE.md)
+# Commercial licensing inquiries: graybenjamin217@gmail.com
+
 """Reproduce Table 1 from the manuscript and verify exact analytical invariants."""
 
 from primorial_dilation import stage_diagnostics
