@@ -22,7 +22,7 @@ from typing import Dict, List, Sequence, Tuple
 
 import numpy as np
 
-PRIMES: Tuple[int, ...] = (2, 3, 5, 7, 11, 13, 17, 19, 23)
+PRIMES: Tuple[int, ...] = (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37)
 
 
 def primorial(k: int) -> Tuple[int, List[int]]:
