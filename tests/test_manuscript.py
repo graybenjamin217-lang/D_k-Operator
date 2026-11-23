@@ -1,3 +1,8 @@
+# SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+# Required Notice: Copyright (c) 2026 Benjamin Edward Gray (https://doi.org/10.5281/zenodo.22899830)
+# Required Notice: Licensed under the PolyForm Noncommercial License 1.0.0 (see LICENSE.md)
+# Commercial licensing inquiries: graybenjamin217@gmail.com
+
 """Direct validation suite for every theorem, proposition, and table in the manuscript.
 
 Compatible with both standard-library unittest (`python -m unittest -v`) and
