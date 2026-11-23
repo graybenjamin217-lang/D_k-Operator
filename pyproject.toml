@@ -7,7 +7,7 @@ name = "primorial-dilation"
 version = "0.1.0"
 description = "Reference implementation and numerical validation suite for the Primorial-Modulated Dilation Operator."
 readme = "README.md"
-license = {text = "MIT"}
+license = {text = "PolyForm-Noncommercial-1.0.0"}
 authors = [
     {name = "Benjamin Edward Gray", email = "graybenjamin217@gmail.com"}
 ]
