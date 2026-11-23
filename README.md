@@ -13,14 +13,14 @@ primorial-dilation-operator/
 ├── LICENSE
 ├── README.md
 ├── pyproject.toml
-├── Requirements.txt
-├── Sripts/
+├── requirements.txt
+├── sripts/
 │   └── reproduce_table1.py       # Reproduces Table 1 (k = 1..5) and asserts exact invariants
 ├── src/
 │   └── primorial_dilation/
 │       ├── __init__.py
 │       └── operator.py           # Core operator T_k^Herm, C_p, G_2(N_k), D_k, and CRT embeddings
-└── Tests/
+└── tests/
     └── test_manuscript.py        # Verification suite (unittest & pytest compatible) for Sections II–VII
 ```
 
