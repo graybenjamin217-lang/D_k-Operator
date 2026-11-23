@@ -116,6 +116,24 @@ def build_T_herm(k: int) -> Tuple[np.ndarray, int, List[int]]:
     return t_mat / math.sqrt(nk), nk, primes
 
 
+def build_principal_block_kronecker(k: int) -> np.ndarray:
+    """Exact 2^k x 2^k matrix of T_k^Herm restricted to V_{chi_0} (Proposition 3.4)."""
+    _, primes = primorial(k)
+    n = 1 << k
+    t_mat = np.zeros((n, n), dtype=np.float64)
+    rs, ps = [], []
+    for p in primes:
+        s = math.sqrt(p - 1.0)
+        rs.append(np.array([[-1.0, s], [s, 1.0]], dtype=np.float64) / math.sqrt(p))
+        ps.append(np.array([[p - 1.0, s], [s, 1.0]], dtype=np.float64) / p)
+    for j in range(k):
+        mat = np.array([[1.0]], dtype=np.float64)
+        for i in range(k):
+            mat = np.kron(mat, ps[i] if i == j else rs[i])
+        t_mat += mat
+    return t_mat
+
+
 def g2_generators(k: int) -> Tuple[List[int], int]:
     """Return the k - 1 CRT involutions generating G_2(N_k) for odd primes p_j | N_k."""
     nk, primes = primorial(k)
