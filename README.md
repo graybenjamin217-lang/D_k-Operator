@@ -60,5 +60,6 @@ python Sripts/reproduce_table1.py
 
 ## Licensing
 
-- Source code in this repository is licensed under the **MIT License** (see `LICENSE`).
+- Source code in this repository is licensed under the **PolyForm Noncommercial License 1.0.0** (see `LICENSE.md`). For commercial licensing inquiries, contact `graybenjamin217@gmail.com`.
 - The accompanying academic manuscript is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+
